@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "list-users": "node scripts/list-users.js",
+    "make-admin": "node scripts/make-admin.js",
+    "make-admin-id": "node scripts/make-admin-by-id.js",
+    "set-single-admin": "node scripts/set-single-admin.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@livekit/protocol": "^1.41.0",
+    "@vonage/auth": "^1.12.0",
+    "@vonage/video": "^1.25.1",
+    "agora-access-token": "^2.0.4",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "livekit-server-sdk": "^2.13.3",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
