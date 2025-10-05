@@ -1,0 +1,24 @@
+{
+  "name": "doctor-appointment-app",
+  "version": "1.0.0",
+  "description": "Doctor appointment system with video calling and emergency call feature",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "doctor",
+    "appointment",
+    "video-calling",
+    "healthcare"
+  ],
+  "author": "Srajan Gupta",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
